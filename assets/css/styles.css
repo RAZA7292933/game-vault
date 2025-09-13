@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.game-card {
+  border: 3px solid transparent;
+  animation: borderPulse 3s infinite;
+  padding: 10px;
+  background: #222;
+}
+@keyframes borderPulse {
+  0% { border-color: #ff00ff; }
+  50% { border-color: #00ffff; }
+  100% { border-color: #ff00ff; }
+}

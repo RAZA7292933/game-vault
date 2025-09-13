@@ -1,0 +1,5 @@
+<?php
+function getGames($conn) {
+  return $conn->query("SELECT * FROM games ORDER BY created_at DESC");
+}
+?>
